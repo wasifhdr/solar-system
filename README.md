@@ -1,4 +1,3 @@
-```markdown
 # 🌌 Interactive 3D Solar System Replica
 
 A production-ready, interactive 3D Solar System simulation built entirely using **Three.js** and **Astronomy Engine**. This application runs entirely in the browser from a single standalone file, mapping real-time astronomical positions onto a visually optimized, interactive 3D environment.
