@@ -7,20 +7,25 @@ A production-ready, interactive 3D Solar System simulation built entirely using 
 ## 🚀 Features
 
 * **Real-Time Data Integration:** Uses the mathematical algorithms of `astronomy-engine` to calculate the exact heliocentric positions of the planets for the current date and time.
+* **High-Fidelity Procedural Earth:** * **GLSL Shaders:** Earth is rendered using custom shader materials featuring procedural noise for continents, oceans, and polar ice.
+  * **Day/Night Cycle & City Lights:** Calculates the sun's directional vector to dynamically reveal glowing city lights on the dark side of the planet.
+  * **Atmosphere & Flight Trails:** Features independent, transparent moving cloud layers and animated flight trails/low-orbit satellites across the surface.
 * **Dynamic Control Mechanics:**
   * **Sync to Real Time:** Automatically fetches the exact current timestamp and snaps the celestial bodies to their true current positions in space.
-  * **Real-Time Movement Toggle:** Swap between an accelerated visual simulation mode and a strict astronomical clock mode (where planets move at their actual, imperceptible physical speeds).
-* **Interactive HUD & Raycasting:** Hovering over the Sun, planets, or moons highlights the celestial body with a responsive wireframe glow and displays contextual data metrics (diameter, orbit tracking, orbital period, and historical fun facts).
-* **Zero Infrastructure Bottlenecks:** No external image assets, local Node servers, or API keys required. All planet surfaces use high-performance procedural canvas textures to completely bypass CORS or broken asset URL errors.
-* **Cinematic Navigation:** Full spatial exploration via mouse tracking powered by `OrbitControls` (Left Click + Drag to rotate, Right Click + Drag to pan, Scroll to zoom).
+  * **Real-Time Movement Toggle:** Swap between an accelerated visual simulation mode and a strict astronomical clock mode.
+  * **Click-to-Zoom:** Clicking on Earth triggers a cinematic, mathematically lerped camera transition into a close-orbit view, with a "Reset View" UI toggle to return to the heliocentric overview.
+* **Interactive HUD & Raycasting:** Hovering over the Sun, planets, or moons highlights the celestial body with a responsive wireframe glow and displays contextual data metrics.
+* **Zero Infrastructure Bottlenecks:** No external image assets, local Node servers, or API keys required. All planet surfaces use high-performance procedural canvas textures and GLSL shaders to completely bypass CORS or broken asset URL errors.
+* **Cinematic Navigation:** Full spatial exploration via mouse tracking powered by `OrbitControls`.
 
 ---
 
 ## 🛠️ Tech Stack & Dependencies
 
 * **Core Engine:** [Three.js (r128)](https://threejs.org/)
+* **Shaders:** Custom GLSL (Vertex and Fragment shaders for procedural generation)
 * **Camera Controls:** `OrbitControls.js`
-* **Astronomical Calculations:** [Astronomy Engine](https://github.com/cosinekitty/astronomy) (Calculates high-precision coordinates locally via client-side processing)
+* **Astronomical Calculations:** [Astronomy Engine](https://github.com/cosinekitty/astronomy) 
 * **UI Overlay:** Embedded HTML5, CSS3 Glassmorphism HUD
 
 ---
