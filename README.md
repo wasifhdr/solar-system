@@ -31,4 +31,4 @@ Because this app is designed with a decentralized, single-file architecture, you
 
 1. Clone this repository or download the source code:
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/solar-system-replica.git](https://github.com/YOUR_USERNAME/solar-system-replica.git)
+   git clone [https://github.com/wasif_hdr/solar-system.git](https://github.com/wasif_hdr/solar-system.git)
